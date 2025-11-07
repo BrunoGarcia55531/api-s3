@@ -5,11 +5,11 @@ provider:
   name: aws
   runtime: python3.13
   region: us-east-1
-  stage: ${opt:stage, 'dev'}  # Usa 'dev' por defecto si no se pasa otro
+  stage: ${opt:stage, 'dev'}
   memorySize: 256
   timeout: 20
   iam:
-    role: arn:aws:iam::682419757205:role/LabRole
+    role: arn:aws:iam::663025695161:role/LabRole
 
   environment:
     STAGE: ${self:provider.stage}
